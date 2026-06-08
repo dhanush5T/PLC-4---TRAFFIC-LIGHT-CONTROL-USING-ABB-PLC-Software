@@ -57,28 +57,24 @@ Signal Sequence
 •	Cycle repeats. 
  
 ## PROGRAM PLC_PRG
+PROGRAM PLC_PRG
 VAR
-S3: BOOL;
-L2: BOOL;
-S2: BOOL;
-M: BOOL;
-RED: BOOL;
-    TIMER1: TON;
-delaY: TIME := t#10s60ms;
-run_time: TIME;
-s1: BOOL;
-TIMER2: TOF;
-L: TIME := T#10S;
-T: TIME;
-M2: BOOL;
-YELLOW: BOOL;
-INP: BOOL;
-RESET: BOOL;
-COUNT: WORD :=5;
-CV: WORD :=0;
-C1: CTU;
-M5: BOOL;
-GREEN: BOOL;
+	START_PB: BOOL;
+	START_MEMORY: BOOL;
+	STOP_PB: BOOL;
+	T1: TON;
+	TIMING1: TIME;
+	GREEN_MEMORY: BOOL;
+	GREEN_LIGHT: BOOL;
+	T2: TON;
+	TIMING2: TIME;
+	YELLOW_MEMORY: BOOL;
+	YELLOW_LIGHT: BOOL;
+	RED_MEMORY: BOOL;
+	T3: TON;
+	TIMING3: TIME;
+	RED_LIGHT: BOOL;
+	CYCLE: BOOL;
 END_VAR
 
 
@@ -97,7 +93,9 @@ T3 Done → Return to T1
 
 ## Output
 
+<img width="1913" height="1078" alt="image" src="https://github.com/user-attachments/assets/d594314d-9beb-4408-801f-33aff52d359e" />
 
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/9802769e-b378-4213-a42e-0c671297a5c7" />
 
 
 
